@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Media Pembelajaran Interaktif Sistem Periodik Unsur dan Sifat Periodisitas Unsur">
+  <title>Jelajah Periodisitas Unsur | MPI Kimia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#beranda" aria-label="Beranda MPI">
+      <span class="brand-icon">⚛</span>
+      <span><strong>JELAJAH</strong><small>PERIODISITAS UNSUR</small></span>
+    </a>
+    <button id="menuToggle" class="menu-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <nav id="mainNav" class="nav">
+      <button class="nav-link active" data-page="beranda">Beranda</button>
+      <button class="nav-link" data-page="materi">Materi</button>
+      <button class="nav-link" data-page="simulasi">Simulasi</button>
+      <button class="nav-link" data-page="kuis">Kuis & Skor</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="beranda" class="page active-page">
+      <div class="hero">
+        <div class="hero-content">
+          <span class="eyebrow">MEDIA PEMBELAJARAN INTERAKTIF · KIMIA X</span>
+          <h1>Kenali pola.<br><span>Pahami unsur.</span></h1>
+          <p>Jelajahi sistem periodik unsur melalui materi ringkas, simulasi perbandingan, dan kuis dengan penilaian otomatis.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-go="materi">Mulai belajar <span>→</span></button>
+            <button class="btn btn-ghost" data-go="simulasi">Coba simulasi</button>
+          </div>
+          <div class="hero-stats">
+            <div><strong>04</strong><span>Bagian materi</span></div>
+            <div><strong>01</strong><span>Simulasi interaktif</span></div>
+            <div><strong>10</strong><span>Soal evaluasi</span></div>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Ilustrasi atom">
+          <div class="atom atom-one"><span class="nucleus">Na</span><i></i><b></b></div>
+          <div class="floating-card card-a"><span>11</span><small>Nomor atom</small></div>
+          <div class="floating-card card-b"><span>3s¹</span><small>Konfigurasi valensi</small></div>
+          <div class="art-caption">SCIENCE EXPLORER <span>✦</span></div>
+        </div>
+      </div>
+      <div class="section-heading">
+        <div><span class="eyebrow">MULAI DARI SINI</span><h2>Jalur belajarmu</h2></div>
+        <p>Pahami konsep, uji prediksi, lalu ukur pemahamanmu.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="feature-number">01</span><div class="feature-icon purple">▤</div><h3>Pelajari konsep</h3><p>Kenali periode, golongan, dan tren sifat periodik.</p><button class="text-button" data-go="materi">Buka materi ↗</button></article>
+        <article class="feature-card"><span class="feature-number">02</span><div class="feature-icon blue">⌁</div><h3>Uji perbandingan</h3><p>Pilih unsur dan prediksi sifat periodiknya.</p><button class="text-button" data-go="simulasi">Buka simulasi ↗</button></article>
+        <article class="feature-card"><span class="feature-number">03</span><div class="feature-icon orange">✓</div><h3>Evaluasi diri</h3><p>Kerjakan sepuluh soal dan lihat hasil otomatis.</p><button class="text-button" data-go="kuis">Mulai kuis ↗</button></article>
+      </div>
+      <div class="learning-note"><span class="note-icon">✦</span><div><strong>Tujuan pembelajaran</strong><p>Setelah belajar, siswa mampu menjelaskan susunan tabel periodik serta menganalisis kecenderungan jari-jari atom, energi ionisasi, dan elektronegativitas secara umum.</p></div></div>
+    </section>
+
+    <section id="materi" class="page">
+      <div class="page-heading"><span class="eyebrow">MODUL PEMBELAJARAN</span><h1>Materi inti</h1><p>Pelajari satu topik pada satu waktu. Pilih kartu materi untuk membaca penjelasan dan contoh.</p></div>
+      <div class="lesson-layout">
+        <aside class="lesson-list" aria-label="Daftar materi">
+          <button class="lesson-tab selected" data-lesson="0"><span>01</span><span><b>Sistem periodik</b><small>Periode & golongan</small></span></button>
+          <button class="lesson-tab" data-lesson="1"><span>02</span><span><b>Jari-jari atom</b><small>Ukuran atom</small></span></button>
+          <button class="lesson-tab" data-lesson="2"><span>03</span><span><b>Energi ionisasi</b><small>Melepas elektron</small></span></button>
+          <button class="lesson-tab" data-lesson="3"><span>04</span><span><b>Elektronegativitas</b><small>Menarik elektron</small></span></button>
+        </aside>
+        <article id="lessonContent" class="lesson-content"></article>
+      </div>
+    </section>
+
+    <section id="simulasi" class="page">
+      <div class="page-heading"><span class="eyebrow">LABORATORIUM DIGITAL</span><h1>Simulasi periodisitas</h1><p>Pilih dua unsur, tentukan sifat yang dibandingkan, lalu buat prediksi sebelum memeriksa hasilnya.</p></div>
+      <div class="sim-layout">
+        <div class="sim-panel">
+          <label for="elementA">Unsur pertama</label>
+          <select id="elementA">
+            <option value="Li">Li — Litium</option><option value="Na" selected>Na — Natrium</option><option value="K">K — Kalium</option><option value="Be">Be — Berilium</option><option value="Mg">Mg — Magnesium</option><option value="Ca">Ca — Kalsium</option><option value="C">C — Karbon</option><option value="N">N — Nitrogen</option><option value="O">O — Oksigen</option><option value="F">F — Fluorin</option>
+          </select>
+          <label for="elementB">Unsur kedua</label>
+          <select id="elementB">
+            <option value="Li">Li — Litium</option><option value="Na">Na — Natrium</option><option value="K" selected>K — Kalium</option><option value="Be">Be — Berilium</option><option value="Mg">Mg — Magnesium</option><option value="Ca">Ca — Kalsium</option><option value="C">C — Karbon</option><option value="N">N — Nitrogen</option><option value="O">O — Oksigen</option><option value="F">F — Fluorin</option>
+          </select>
+          <label for="property">Sifat yang dibandingkan</label>
+          <select id="property"><option value="radius">Jari-jari atom</option><option value="ionization">Energi ionisasi</option><option value="electronegativity">Elektronegativitas</option></select>
+          <label for="prediction">Menurutmu, unsur mana yang memiliki nilai lebih besar?</label>
+          <div id="predictionChoices" class="prediction-choices">
+            <label class="choice"><input type="radio" name="prediction" value="A" checked><span id="choiceALabel">Na</span></label>
+            <label class="choice"><input type="radio" name="prediction" value="B"><span id="choiceBLabel">K</span></label>
+            <label class="choice"><input type="radio" name="prediction" value="same"><span>Sama besar</span></label>
+          </div>
+          <button id="checkPrediction" class="btn btn-primary full-width">Periksa prediksi</button>
+          <button id="resetSimulation" class="btn btn-ghost full-width">Reset simulasi</button>
+        </div>
+        <div class="sim-result">
+          <div class="result-top"><span class="eyebrow">HASIL PERBANDINGAN</span><span class="live-pill"><i></i> Interaktif</span></div>
+          <div class="element-compare">
+            <div class="element-tile"><small>UNSUR A</small><strong id="symbolA">Na</strong><span id="nameA">Natrium</span><em id="periodA">Periode 3 · Golongan 1</em></div>
+            <div class="compare-vs">VS</div>
+            <div class="element-tile"><small>UNSUR B</small><strong id="symbolB">K</strong><span id="nameB">Kalium</span><em id="periodB">Periode 4 · Golongan 1</em></div>
+          </div>
+          <div id="trendVisual" class="trend-visual"><span>Jari-jari atom</span><div class="trend-bar"><i style="width:65%"></i><i style="width:88%"></i></div><small>Secara umum, jari-jari membesar ke bawah dalam satu golongan.</small></div>
+          <div id="simulationFeedback" class="feedback neutral" role="status">Pilih unsur dan sifat, lalu tekan “Periksa prediksi”.</div>
+          <p class="small-note">Catatan: simulasi menggunakan tren umum dan data pembelajaran sederhana. Nilai eksperimen dapat bervariasi menurut definisi dan keadaan atom.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="kuis" class="page">
+      <div class="page-heading"><span class="eyebrow">UJI PEMAHAMAN</span><h1>Kuis evaluasi</h1><p>Jawab 10 pertanyaan. Nilai dihitung otomatis berdasarkan jawaban yang benar.</p></div>
+      <div id="quizIntro" class="quiz-intro">
+        <div class="quiz-intro-art">?</div>
+        <div><h2>Siap menguji pemahamanmu?</h2><p>Setiap soal memiliki lima pilihan jawaban. Setelah selesai, kamu akan melihat skor, kunci, dan pembahasan.</p>
+          <label for="studentName">Nama siswa (opsional)</label><input id="studentName" type="text" maxlength="60" placeholder="Tulis nama kamu">
+          <button id="startQuiz" class="btn btn-primary">Mulai kuis <span>→</span></button>
+        </div>
+      </div>
+      <div id="quizBox" class="quiz-box hidden">
+        <div class="quiz-progress-row"><span id="questionCounter">SOAL 1 DARI 10</span><span id="answeredCounter">0 dijawab</span></div>
+        <div class="progress-track"><div id="quizProgress" class="progress-fill"></div></div>
+        <div id="questionText" class="question-text"></div>
+        <div id="answerOptions" class="answer-options"></div>
+        <div class="quiz-controls"><button id="prevQuestion" class="btn btn-ghost">← Sebelumnya</button><button id="nextQuestion" class="btn btn-primary">Berikutnya →</button><button id="submitQuiz" class="btn btn-primary hidden">Selesaikan kuis ✓</button></div>
+      </div>
+      <div id="quizResult" class="quiz-result hidden"></div>
+    </section>
+  </main>
+
+  <footer><div class="footer-brand"><span class="brand-icon">⚛</span><strong>JELAJAH PERIODISITAS</strong></div><p>Media Pembelajaran Interaktif Kimia · Kelas X SMA</p><small>Materi ini merupakan media belajar. Gunakan buku dan sumber pembelajaran tepercaya untuk pendalaman.</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
